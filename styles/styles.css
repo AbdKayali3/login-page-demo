@@ -24,6 +24,7 @@
     --title-font-size: 22px;
     --title-font-weight: 700;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -50,22 +51,6 @@ html, body {
 
 .btn:hover, .btn:focus, .btn:active {
     background-color: var(--primary-color-dark);
-}
-
-.p-0 {
-    padding: 0;
-}
-
-.m-0 {
-    margin: 0;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.m-auto {
-    margin: auto;
 }
 
 .bold {
