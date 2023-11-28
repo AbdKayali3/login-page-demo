@@ -4,16 +4,25 @@
     --primary-color-light: #0067FF;
     --primary-color-dark: #003CAB;
 
+    --link-color: #0066FF;
+
     --secondary-color: #F4F9FF;
+
+    --input-dark-color: #F8F8F8;
+    --input-border-color: #D8D8D8;
+
     --font-color: #333333;
     --font-color-light: #757575;
+    /* --font-color-light: #929292; */
     --secondary-font-color: #FFFFFF;
 
     --main-font: 'Mulish', sans-serif;
-    --font-size: 16px;
+    --font-size: 12px;
     --font-weight: 400;
-    --title-font-size: 24px;
+    --bigger-font-size: 14px;
     --bold-font-weight: 600;
+    --title-font-size: 22px;
+    --title-font-weight: 700;
 }
 * {
     box-sizing: border-box;
@@ -30,7 +39,6 @@ html, body {
 }
 
 .btn {
-    /* Styles for buttons */
     padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid var(--primary-color-light);
@@ -41,7 +49,6 @@ html, body {
 }
 
 .btn:hover, .btn:focus, .btn:active {
-    /* Styles for button hover effect */
     background-color: var(--primary-color-dark);
 }
 
@@ -66,19 +73,16 @@ html, body {
 }
 
 .light-text {
-    /* Styles for light text */
     color: var(--font-color-light);
 }
 
 .title {
-    /* Styles for titles */
     font-size: var(--title-font-size);
-    font-weight: var(--bold-font-weight);
+    font-weight: var(--title-font-weight);
 }
 
 a {
-    /* Styles for links */
-    color: var(--primary-color);
+    color: var(--primary-color-light);
     font-weight: var(--bold-font-weight);
 }
 
@@ -88,8 +92,9 @@ a {
     min-height: 100vh;
 }
 
+
+/* Styles for the illustration section */
 .illustration-section {
-    /* Styles for the illustration section */
     width: 40%;
     background-color: var(--secondary-color);
     position: relative;
@@ -100,19 +105,90 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
 }
 
 .illustration-section .illustration-holder img {
     width: 100%;
 }
 
+
+
+/* Styles for the login section */
 .login-section {
-    /* Styles for the login section */
     width: 60%;
+    position: relative;
+}
+
+.register-holder {
+    margin-top: 2rem;
+    margin-right: 20%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.login-conent-holder {
+    margin: auto;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-conent-holder h5 {
+    margin: 0;
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-weight);
+}
+.login-conent-holder .title {
+    margin-bottom: 1rem;
+    margin-top: .5rem;
 }
 
 
+/* Styles for form */
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    outline: none;
+    transition: 0.3s ease;
+    display: block;
+    width: 100%;
+    background-color: var(--input-dark-color);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.login-conent-holder .input-group {
+    margin-top: 1.5rem;
+}
+.login-conent-holder label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: var(--font-size);
+    font-weight: var(--bold-font-weight);
+}
+
+.passowrd-holder {
+    position: relative;
+}
+
+.show-password {
+    cursor: pointer;
+    color: var(--font-color-light);
+    fill: var(--font-color-light);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+/* Styles for seperator */
 .separator {
     display: flex;
     align-items: center;
@@ -129,3 +205,4 @@ a {
 .separator .text {
     padding: 0 20px;
 }
+

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/font-awesome-all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Login</title>
 </head>
@@ -18,8 +20,8 @@
                 <p>Not registered? <a href="#">Create an account</a></p>
             </div>
             <div class="login-conent-holder">
-                <p class="">Welcome back! 👋</p>
-                <h2>Login to your account</h2>
+                <h5 class="light-text">Welcome back! 👋</h5>
+                <h2 class="title">Login to your account</h2>
 
                 <form action="#" method="POST">
                     <div class="input-group">
@@ -28,11 +30,13 @@
                     </div>
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter password">
+                        <div class="passowrd-holder">
+                            <input type="password" id="password" name="password" placeholder="Enter password">
+                            <span class="show-password" id="show-password">
+                                <i class="fas fa-eye-slash"></i>
+                            </span>
+                        </div>
                         <!-- // a button to show the password-->
-                        <button class="show-password" type="button">
-                            <i class="fas fa-eye-slash"></i>
-                        </button>
                     </div>
 
                     <div class="input-group">
@@ -61,6 +65,7 @@
         </div>
     </main>
 
+    <script src="scripts/font-awesome-all.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
