@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.illustration-section {
+    /* Styles for the illustration section */
+    width: 50%;
+}
+
+.login-section {
+    /* Styles for the login section */
+    width: 50%;
+}
+
+button {
+    /* Styles for buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* Styles for button hover effect */
+    background-color: #ddd;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #aaa;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #aaa;
+}
+
+.text {
+    padding: 0 20px;
+}
+
+/* Styles for mobile view */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

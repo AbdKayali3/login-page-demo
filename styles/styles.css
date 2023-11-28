@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --primary-color: #0056D7;
+    --primary-color-light: #0067FF;
+    --primary-color-dark: #003CAB;
+
+    --secondary-color: #F4F9FF;
+    --font-color: #333333;
+    --font-color-light: #757575;
+    --secondary-font-color: #FFFFFF;
+
+    --main-font: 'Mulish', sans-serif;
+    --font-size: 16px;
+    --font-weight: 400;
+    --title-font-size: 24px;
+    --bold-font-weight: 600;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: var(--font-color);
+}
+
+.btn {
+    /* Styles for buttons */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color-light);
+    background-color: var(--primary-color);
+    color: var(--secondary-font-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    /* Styles for button hover effect */
+    background-color: var(--primary-color-dark);
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.bold {
+    font-weight: var(--bold-font-weight);
+}
+
+.light-text {
+    /* Styles for light text */
+    color: var(--font-color-light);
+}
+
+.title {
+    /* Styles for titles */
+    font-size: var(--title-font-size);
+    font-weight: var(--bold-font-weight);
+}
+
+a {
+    /* Styles for links */
+    color: var(--primary-color);
+    font-weight: var(--bold-font-weight);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.illustration-section {
+    /* Styles for the illustration section */
+    width: 40%;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+.illustration-section .illustration-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.illustration-section .illustration-holder img {
+    width: 100%;
+}
+
+.login-section {
+    /* Styles for the login section */
+    width: 60%;
+}
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #aaa;
+}
+
+.separator .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #aaa;
+}
+
+.separator .text {
+    padding: 0 20px;
+}
